@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import NewChallenge from './NewChallenge.jsx';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isCreatingNewChallenge, setIsCreatingNewChallenge] = useState();
@@ -18,7 +19,7 @@ export default function Header() {
       {isCreatingNewChallenge && <NewChallenge onDone={handleDone} />}
 
       <header id="main-header">
-        <h1>도전</h1>
+        <h1><Link to={"/"} > 도전</Link></h1>
         <button onClick={handleStartAddNewChallenge} className="button">
          추가 도전
         </button>

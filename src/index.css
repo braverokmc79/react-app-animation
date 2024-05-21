@@ -34,10 +34,21 @@ body {
 }
 
 #main-header h1 {
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.5rem;
   color: #84b0fc;
 }
+
+#main-header h1  a{
+  color: #84b0fc;
+  text-decoration: none;
+}
+#main-header h1  a:hover{
+  color: #5c7fbd;  
+}
+
+
 
 #welcome-header {
   height: 100vh;
@@ -315,7 +326,23 @@ main {
   width: 30rem;
   max-width: 90%;
   z-index: 10;
+  animation: slide-up-fade-in 0.3s ease-out forwards;
 }
+
+@keyframes slide-up-fade-in{
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
 
 .modal h2 {
   margin-top: 0;
@@ -361,3 +388,20 @@ main {
   color: #fff;
   font-size: 0.5rem;
 }
+
+footer{
+  height: 100px;
+  position: fixed;
+  align-content: center;
+  align-items: center;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;  
+}
+footer a{
+text-decoration: none;
+color: #fff;
+}
+footer a:hover{
+color: rgb(164, 164, 225);
+}  

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import cityImg from "../assets/city.jpg";
 import heroImg from "../assets/hero.png";
+import Footer from "../components/Footer";
 
 export default function WelcomePage() {
   return (
@@ -64,6 +65,7 @@ export default function WelcomePage() {
           {/* You can add more testimonials or even a carousel for multiple testimonials */}
         </section>
       </main>
+      <Footer />
     </>
   );
 }
