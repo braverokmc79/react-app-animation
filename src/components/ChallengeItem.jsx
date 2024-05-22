@@ -51,7 +51,7 @@ export default function ChallengeItem({
               <motion.span 
                 animate={{rotate:isExpanded ? 180: 0}}
                 className="challenge-item-details-icon"
-              >&#9650;</motion.span>
+              >&#9650;😊😊</motion.span>
 
             </button>
           </p>
