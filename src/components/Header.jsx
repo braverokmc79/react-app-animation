@@ -25,7 +25,7 @@ export default function Header() {
       <header id="main-header">
         <h1><Link to={"/"} > 도전</Link></h1>
         <motion.button
-          whileHover={{scale:1.1}}
+          whileHover={{scale:1.1, backgroundColor:"#8b11f0"}}
           transition={{type:'spring', stiffness:500 , mass: 1 }}
           onClick={handleStartAddNewChallenge} 
           className="button">
